@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/almostBlack"
+    tools:ignore="HardcodedText"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="20dp">
+
+
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textAlignment="textEnd"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/AC"
+            style="@style/buttonNumber"
+            android:textColor="@color/orange"
+            android:text="AC" />
+        <Button
+            android:id="@+id/backspace"
+            style="@style/buttonNumber"
+            android:textColor="@color/orange"
+            android:text="⌫"/>
+        <Button
+            android:id="@+id/modulus"
+            style="@style/buttonOperator"
+            android:text="%"
+            android:onClick="operatorEvent" />
+        <Button
+            android:id="@+id/divide"
+            style="@style/buttonOperator"
+            android:text="/"
+            android:onClick="operatorEvent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/buttonNumber"
+            android:text="7"
+            android:onClick="numberEvent" />
+        <Button
+            android:id="@+id/button8"
+            style="@style/buttonNumber"
+            android:text="8"
+            android:onClick="numberEvent" />
+        <Button
+            android:id="@+id/button9"
+            style="@style/buttonNumber"
+            android:text="9"
+            android:onClick="numberEvent" />
+        <Button
+            android:id="@+id/multiply"
+            style="@style/buttonOperator"
+            android:text="X"
+            android:onClick="operatorEvent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/buttonNumber"
+            android:text="4"
+            android:onClick="numberEvent" />
+        <Button
+            android:id="@+id/button5"
+            style="@style/buttonNumber"
+            android:text="5"
+            android:onClick="numberEvent" />
+        <Button
+            android:id="@+id/button6"
+            style="@style/buttonNumber"
+            android:text="6"
+            android:onClick="numberEvent" />
+        <Button
+            android:id="@+id/subtract"
+            style="@style/buttonOperator"
+            android:text="-"
+            android:onClick="operatorEvent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/buttonNumber"
+            android:text="1"
+            android:onClick="numberEvent" />
+        <Button
+            android:id="@+id/button2"
+            style="@style/buttonNumber"
+            android:text="2"
+            android:onClick="numberEvent" />
+        <Button
+            android:id="@+id/button3"
+            style="@style/buttonNumber"
+            android:text="3"
+            android:onClick="numberEvent" />
+        <Button
+            android:id="@+id/add"
+            style="@style/buttonOperator"
+            android:text="+"
+            android:onClick="operatorEvent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/decimal"
+            style="@style/buttonNumber"
+            android:text="."
+            android:onClick="decimalEvent"/>
+        <Button
+            android:id="@+id/button0"
+            style="@style/buttonNumber"
+            android:text="0"
+            android:onClick="numberEvent" />
+        <Button
+            android:id="@+id/equals"
+            style="@style/buttonNumber"
+            android:background="@color/orange"
+            android:layout_weight="2"
+            android:textSize="40sp"
+            android:text="="
+            android:onClick="equalsEvent"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
